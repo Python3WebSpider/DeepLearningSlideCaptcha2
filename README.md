@@ -4,22 +4,14 @@
 
 只需要几百张缺口标注图片即可训练出精度高的识别模型，识别效果样例：
 
-![](data/captcha/result/captcha_4502.png)
+![](data/captcha/result/captcha_435.png)
 ## 克隆项目
 
-由于本项目使用了 Git LFS，包含了已经训练好的模型，克隆时间较长，基本命令：
+运行命令：
 
 ```
 git clone https://github.com/Python3WebSpider/DeepLearningSlideCaptcha.git
 ```
-
-如果想加速克隆，暂时先跳过大文件模型下载，可以执行命令：
-
-```
-GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/Python3WebSpider/DeepLearningSlideCaptcha.git
-```
-
-> 注意：这里我的 Git LFS 流量超了，无法下载了，可以手动下载模型放到 checkpoints 文件夹。网盘：链接:https://pan.baidu.com/s/1_do6DDEzViYFq_JASSl5Bg  密码:5bni
 
 ## 数据准备
 
@@ -69,14 +61,6 @@ bash train.sh
 
 训练完毕之后会在 checkpoints 文件夹生成 pth 文件，可直接使用模型来预测生成标注结果。
 
-如之前跳过了 Git LFS 文件下载，则可以使用如下命令下载 Git LFS 文件：
-
-```
-git lfs pull
-```
-
-> 注意：这里我的 Git LFS 流量超了，无法下载了，可以手动下载模型放到 checkpoints 文件夹。网盘：链接:https://pan.baidu.com/s/1_do6DDEzViYFq_JASSl5Bg  密码:5bni
-
 此时 checkpoints 文件夹会生成训练好的 pth 文件。
 
 当前数据测试脚本：
@@ -124,15 +108,16 @@ Saving images:
 
 样例结果：
 
-![](data/captcha/result/captcha_4501.png)
+![](data/captcha/result/captcha_288.png)
 
-![](data/captcha/result/captcha_4505.png)
+![](data/captcha/result/captcha_435.png)
 
-![](data/captcha/result/captcha_4503.png)
+![](data/captcha/result/captcha_354.png)
 
 ## 协议
 
-本项目基于开源 [GNU 协议](https://github.com/eriklindernoren/PyTorch-YOLOv3/blob/master/LICENSE)，另外本项目不提供任何有关滑动轨迹相关模拟和 JavaScript 逆向分析方案。
+本项目基于开源 [GNU 协议](https://github.com/eriklindernoren/PyTorch-YOLOv3/blob/master/LICENSE)
+，另外本项目不提供任何有关滑动轨迹相关模拟和 JavaScript 逆向分析方案。
 
 本项目仅供学习交流使用，请勿用于非法用途，本人不承担任何法律责任。
 
