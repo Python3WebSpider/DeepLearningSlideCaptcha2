@@ -1,0 +1,4 @@
+classes= 1
+train=data/captcha/train.txt
+valid=data/captcha/valid.txt
+names=data/captcha/classes.names
