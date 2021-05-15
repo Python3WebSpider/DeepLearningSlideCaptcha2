@@ -6,9 +6,6 @@ from loguru import logger
 CAPTCHA_WIDTH = 520
 CAPTCHA_HEIGHT = 320
 
-image_source = cv2.imread('block_source.png', cv2.IMREAD_UNCHANGED)
-image_target = cv2.imread('block_target.png', cv2.IMREAD_UNCHANGED)
-
 for root, dirs, files in os.walk('input'):
     for file in files:
         image_path = os.path.join(root, file)
