@@ -10,7 +10,7 @@
 运行命令：
 
 ```
-git clone https://github.com/Python3WebSpider/DeepLearningSlideCaptcha.git
+git clone https://github.com/Python3WebSpider/DeepLearningSlideCaptcha2.git
 ```
 
 ## 数据准备
