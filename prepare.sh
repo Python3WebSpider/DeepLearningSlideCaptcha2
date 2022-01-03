@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 cd weights
 
 # Download weights for vanilla YOLOv3
